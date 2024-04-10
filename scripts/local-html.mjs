@@ -29,18 +29,18 @@ const readSubDirSync = (folderPath) => {
 /**
  * 対象HTMLファイルの情報取得
  * @param filePath 対象のHTMLファイルパス
- * @returns ファイルパス、title、h1、description、keywordsのオブジェクト
+ * @returns ファイルパス、title、description、keywords、ogImage、h1のオブジェクト
  */
 const getHtmlInfo = (filePath) => {
   // HTMLファイルを読み込み
   const html = fs.readFileSync(filePath, "utf-8");
-  // ファイルパス、title、h1、description、keywordsのオブジェクトを取得
+  // ファイルパス、title、description、keywords、ogImage、h1のオブジェクトを取得
   const $ = cheerio.load(html);
   const title = $("title").text();
   const description = $('meta[name="description"]').attr("content");
   const keywords = $('meta[name="keywords"]').attr("content");
   const ogImage = $('meta[property="og:image"]').attr("content");
-  const h1 = $("h1").text();
+  const h1 = $("h1").html();
 
   const obj = {
     path: filePath,
@@ -56,7 +56,7 @@ const getHtmlInfo = (filePath) => {
 /**
  * フォルダ配下のHTML情報取得
  * @param folderPath 対象のフォルダパス
- * @returns ファイルパス、title、h1、description、keywordsのオブジェクトの配列
+ * @returns ファイルパス、title、description、keywords、ogImage、h1のオブジェクトの配列
  */
 const getHtmlInfos = (folderPath) => {
   // HTMLファイルのみのパス配列取得
