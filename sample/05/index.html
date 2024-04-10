@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>sample</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="/style.437a68fb.css">
+  <script src="/style.437a68fb.js"></script></head>
+  <body>
+    <!-- https://aguije.jp/ -->
+    <svg id="filters">
+      <filter id="textNoise">
+        <feTurbulence type="fractalNoise" baseFrequency="1.5" numOctaves="5" result="warp"></feTurbulence>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="90" in="SourceGraphic" in2="warp"></feDisplacementMap>
+      </filter>
+    </svg>
+
+    <h2><span class="noise">Works</span></h2>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="/script.864b1bcc.js"></script>
+  </body>
+</html>

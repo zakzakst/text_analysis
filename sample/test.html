@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>サンプルページ01 | サイト名</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta
+      content="ページの概要が入ります。ページの概要が入ります。ページの概要が入ります。"
+      name="description"
+    />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <link href="https://s-ishizaki.sakura.ne.jp/sample/01/" rel="canonical" />
+    <link
+      href="https://s-ishizaki.sakura.ne.jp/sample/01/img/common/favicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://s-ishizaki.sakura.ne.jp/sample/01/img/common/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      type="image/png"
+    />
+    <meta content="ja_JP" property="og:locale" />
+    <meta content="サンプルページ01" property="og:title" />
+    <meta content="article" property="og:type" />
+    <meta
+      content="https://s-ishizaki.sakura.ne.jp/sample/01/"
+      property="og:url"
+    />
+    <meta content="サイト名" property="og:site_name" />
+    <meta
+      content="https://s-ishizaki.sakura.ne.jp/sample/01/img/common/ogp.png"
+      property="og:image"
+    />
+    <meta
+      content="ページの概要が入ります。ページの概要が入ります。ページの概要が入ります。"
+      property="og:description"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://s-ishizaki.sakura.ne.jp/",
+              "name": "石崎悟士WEBサイト"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://s-ishizaki.sakura.ne.jp/sample/01/",
+              "name": "サンプルページ01"
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      .loader {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: 10000;
+      }
+      .loader__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #345017;
+      }
+      .loader__content {
+        position: relative;
+        z-index: 1;
+      }
+      .loader__content > span {
+        display: inline-block;
+        color: #fff;
+        font-family: Oswald, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+      }
+    </style>
+    <script>
+      document.documentElement.style.overflow = "hidden";
+      setTimeout(() => {
+        var docDisplay = document.getElementById("js-loader").style.display;
+        if (!docDisplay === "display") {
+          docDisplay = "none";
+          document.documentElement.style.overflow = null;
+        }
+      }, 10000);
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="loader" id="js-loader">
+      <div class="loader__bg"></div>
+      <p class="loader__content">
+        <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span
+        ><span>N</span><span>G</span><span>.</span><span>.</span><span>.</span>
+      </p>
+    </div>
+    <header class="header">
+      <div class="js-fix-content header-button__wrapper">
+        <a href="#" class="header-button" id="js-header-button">
+          <div class="header-button__bar">
+            <div class="header-button__bar-item"></div>
+            <div class="header-button__bar-item"></div>
+            <div class="header-button__bar-item"></div>
+          </div>
+        </a>
+      </div>
+      <div class="js-fix-content header-menu" id="js-header-menu">
+        <ul class="header-menu__items">
+          <li><a href="#" class="header-menu__item">LINK 01</a></li>
+          <li><a href="#" class="header-menu__item">LINK 02</a></li>
+          <li><a href="#" class="header-menu__item">LINK 03</a></li>
+          <li><a href="#" class="header-menu__item">LINK 04</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="section">
+          <div class="columns is-relative section-hero" id="js-section-hero">
+            <div class="column is-5">
+              <h1 class="section-hero__title">
+                <span class="section-hero__title-line"><span>ここに</span></span
+                ><span class="section-hero__title-line"
+                  ><span>タイトルが</span></span
+                ><span class="section-hero__title-line"
+                  ><span>入ります</span></span
+                >
+              </h1>
+              <p class="section-hero__lead">
+                <span
+                  >テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br />テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</span
+                >
+              </p>
+            </div>
+            <div class="column is-7 section-hero__mv-wrapper">
+              <div class="section-hero__mv">
+                <div class="section-hero__mv-item">
+                  <div class="section-hero__mv-img-container">
+                    <div
+                      class="section-hero__mv-img"
+                      data-img-src="img/hero/mv-01.jpg"
+                    ></div>
+                  </div>
+                </div>
+                <div class="section-hero__mv-item">
+                  <div class="section-hero__mv-img-container">
+                    <div
+                      class="section-hero__mv-img"
+                      data-img-src="img/hero/mv-02.jpg"
+                    ></div>
+                  </div>
+                </div>
+                <div class="section-hero__mv-item">
+                  <div class="section-hero__mv-img-container">
+                    <div
+                      class="section-hero__mv-img"
+                      data-img-src="img/hero/mv-03.jpg"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container js-scroll-anim">
+        <section class="section">
+          <div class="columns section-news">
+            <div class="column is-4">
+              <div class="lead">
+                <h2 class="lead__heading">
+                  <span class="lead__shoulder">NEWS</span>ニュース
+                </h2>
+                <p class="lead__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+            <div class="column is-7">
+              <ul class="news-list">
+                <li>
+                  <a href="#" class="news-list__item">
+                    <div class="news-list__head">
+                      <span class="news-list__head-category">お知らせ</span
+                      ><span class="news-list__head-date">2021.01.01</span>
+                    </div>
+                    <div class="news-list__text">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="news-list__item">
+                    <div class="news-list__head">
+                      <span class="news-list__head-category">イベント</span
+                      ><span class="news-list__head-date">2021.01.02</span>
+                    </div>
+                    <div class="news-list__text">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="news-list__item">
+                    <div class="news-list__head">
+                      <span class="news-list__head-category">お知らせ</span
+                      ><span class="news-list__head-date">2021.01.03</span>
+                    </div>
+                    <div class="news-list__text">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container js-scroll-anim">
+        <section class="section">
+          <div class="columns section-event">
+            <div class="column is-4">
+              <div class="lead is-align-right">
+                <h2 class="lead__heading">
+                  <span class="lead__shoulder">EVENT</span>イベント
+                </h2>
+                <p class="lead__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+            <div class="column is-7">
+              <ul class="event-list">
+                <li class="event-list__item">
+                  <a href="#">
+                    <div class="event-list__item-head">
+                      <img
+                        alt=""
+                        src="img/event/event-01.jpg"
+                        height="120"
+                        width="240"
+                      /><span>2021.01.01</span>
+                    </div>
+                    <div class="event-list__item-body">
+                      <h3 class="event-list__item-title">
+                        イベント名が入ります。イベント名が入ります。
+                      </h3>
+                      <p class="event-list__item-text"></p>
+                    </div>
+                  </a>
+                </li>
+                <li class="event-list__item">
+                  <a href="#">
+                    <div class="event-list__item-head">
+                      <img
+                        alt=""
+                        src="img/event/event-02.jpg"
+                        height="120"
+                        width="240"
+                      /><span>2021.01.02</span>
+                    </div>
+                    <div class="event-list__item-body">
+                      <h3 class="event-list__item-title">
+                        イベント名が入ります。イベント名が入ります。
+                      </h3>
+                      <p class="event-list__item-text"></p>
+                    </div>
+                  </a>
+                </li>
+                <li class="event-list__item">
+                  <a href="#">
+                    <div class="event-list__item-head">
+                      <img
+                        alt=""
+                        src="img/event/event-03.jpg"
+                        height="120"
+                        width="240"
+                      /><span>2021.01.03</span>
+                    </div>
+                    <div class="event-list__item-body">
+                      <h3 class="event-list__item-title">
+                        イベント名が入ります。イベント名が入ります。
+                      </h3>
+                      <p class="event-list__item-text"></p>
+                    </div>
+                  </a>
+                </li>
+                <li class="event-list__item">
+                  <a href="#">
+                    <div class="event-list__item-head">
+                      <img
+                        alt=""
+                        src="img/event/event-01.jpg"
+                        height="120"
+                        width="240"
+                      /><span>2021.01.04</span>
+                    </div>
+                    <div class="event-list__item-body">
+                      <h3 class="event-list__item-title">
+                        イベント名が入ります。イベント名が入ります。
+                      </h3>
+                      <p class="event-list__item-text"></p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section-point">
+        <div class="container">
+          <div class="section">
+            <div class="columns js-scroll-anim point-content">
+              <div class="column is-7">
+                <p class="point-content__shoulder"><span>POINT 01</span></p>
+                <h3 class="point-content__heading">見出しが入ります</h3>
+                <div class="point-content__text">
+                  <p>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                  <p>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="column is-5">
+                <p class="point-content__img">
+                  <img alt="" src="img/point/point-01.jpg" />
+                </p>
+              </div>
+            </div>
+            <div class="columns js-scroll-anim point-content">
+              <div class="column is-7">
+                <p class="point-content__shoulder"><span>POINT 02</span></p>
+                <h3 class="point-content__heading">見出しが入ります</h3>
+                <div class="point-content__text">
+                  <p>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                  <p>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="column is-5">
+                <p class="point-content__img">
+                  <img alt="" src="img/point/point-02.jpg" />
+                </p>
+              </div>
+            </div>
+            <div class="columns js-scroll-anim point-content">
+              <div class="column is-7">
+                <p class="point-content__shoulder"><span>POINT 03</span></p>
+                <h3 class="point-content__heading">見出しが入ります</h3>
+                <div class="point-content__text">
+                  <p>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                  <p>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </p>
+                </div>
+              </div>
+              <div class="column is-5">
+                <p class="point-content__img">
+                  <img alt="" src="img/point/point-03.jpg" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container js-scroll-anim">
+        <section class="section">
+          <div class="columns section-access">
+            <div class="column is-4">
+              <div class="lead">
+                <h2 class="lead__heading">
+                  <span class="lead__shoulder">ACCESS</span>アクセス
+                </h2>
+                <p class="lead__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+            <div class="column is-7 section-access__content">
+              <div class="info-list">
+                <dl class="info-list__item">
+                  <dt>項目名1</dt>
+                  <dd>
+                    テキストが入ります。テキストが入ります。テキストが入ります。<br />テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </dd>
+                </dl>
+                <dl class="info-list__item">
+                  <dt>項目名2</dt>
+                  <dd>
+                    テキストが入ります。テキストが入ります。テキストが入ります。<br />テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </dd>
+                </dl>
+                <dl class="info-list__item">
+                  <dt>項目名3</dt>
+                  <dd>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  </dd>
+                </dl>
+                <dl class="info-list__item">
+                  <dt>項目名4</dt>
+                  <dd>
+                    <span
+                      >テキストが入ります。テキストが入ります。テキストが入ります。<br />テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</span
+                    >
+                  </dd>
+                </dl>
+                <dl class="info-list__item">
+                  <dt>項目名5</dt>
+                  <dd>
+                    テキストが入ります。テキストが入ります。テキストが入ります。
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="section-access__map">
+            <iframe
+              allowfullscreen=""
+              aria-hidden="false"
+              frameborder="0"
+              height="300"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.0459159529737!2d139.80315461529614!3d35.74967618017841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e4fa6644e8d%3A0x6bc4e612ab55d171!2z5YyX5Y2D5L2P6aeF!5e0!3m2!1sja!2sjp!4v1611569782550!5m2!1sja!2sjp"
+              style="border: 0"
+              tabindex="0"
+              width="100%"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+      <div class="section-faq">
+        <div class="container">
+          <div class="section">
+            <div class="faq-list">
+              <ul class="faq-list__tab">
+                <li class="faq-list__tab-item" data-target-index="0">
+                  ○○について
+                </li>
+                <li class="faq-list__tab-item" data-target-index="1">
+                  ××について
+                </li>
+                <li class="faq-list__tab-item" data-target-index="2">
+                  □□について
+                </li>
+                <li class="faq-list__tab-item" data-target-index="3">
+                  △△について
+                </li>
+              </ul>
+              <div class="faq-list__contents">
+                <div class="faq-list__content">
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      ○○について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      ○○について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      ○○について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      ○○について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                </div>
+                <div class="faq-list__content">
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      ××について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      ××について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      ××について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                </div>
+                <div class="faq-list__content">
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      □□について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      □□について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      □□について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      □□について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                </div>
+                <div class="faq-list__content">
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      △△について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                  <div class="faq-list__content-item">
+                    <h3 class="faq-list__content-question">
+                      △△について質問が入ります。
+                    </h3>
+                    <p class="faq-list__content-answer">
+                      テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-contact">
+        <a href="#" class="section-contact__link">
+          <div class="section-contact__inner">
+            <h2 class="section-contact__heading">CONTACT</h2>
+            <p class="section-contact__text">ご依頼・お問い合わせ</p>
+            <div class="section-contact__arrow"></div>
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="section footer__inner">
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">リンク01</a></li>
+            <li><a href="#" class="footer__link">リンク02</a></li>
+            <li><a href="#" class="footer__link">リンク03</a></li>
+            <li><a href="#" class="footer__link">リンク04</a></li>
+            <li><a href="#" class="footer__link">リンク05</a></li>
+          </ul>
+          <p class="footer__copy">Copyright ©XXXXX. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="js-fix-content footer-go-top">
+      <a href="#" class="footer-go-top__button" id="js-footer-go-top"
+        ><span class="icon-text"
+          ><span class="icon"><i class="fa-arrow-alt-circle-up fas"></i></span
+          ><span>トップへ戻る</span></span
+        ></a
+      >
+    </div>
+    <script src="js/script.js"></script>
+    <script
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+      defer="defer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+#filters {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.noise {
+  display: inline-block;
+  opacity: 0;
+  filter: url(#textNoise);
+  font-size: 32px;
+  font-weight: bold;
+  margin: -0.1em;
+  padding: 0.1em;
+}
+
+/*# sourceMappingURL=/style.437a68fb.css.map */

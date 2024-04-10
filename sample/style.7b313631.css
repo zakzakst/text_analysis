@@ -1,0 +1,17 @@
+.svg-filter {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.fe-blur {
+  filter: url(#feGaussianBlur);
+}
+
+.fe-aberration {
+  filter: url(#chromaticAberration);
+}
+
+/*# sourceMappingURL=/style.7b313631.css.map */

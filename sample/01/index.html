@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>sample</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="/style.7b313631.css">
+  <script src="/style.7b313631.js"></script></head>
+  <body>
+    <!-- https://lopan.jp/about-svg/filter/ -->
+    <svg class="svg-filter">
+      <defs>
+        <!-- ▼▼▼ X方向のぼかし ▼▼▼ -->
+        <filter id="feGaussianBlur">
+          <feGaussianBlur stdDeviation="8 0"></feGaussianBlur>
+        </filter>
+        <!-- ▲▲▲ X方向のぼかし ▲▲▲ -->
+
+        <!-- ▼▼▼ RGBチャンネル ▼▼▼ -->
+        <filter id="chromaticAberration">
+          <!-- greenの抽出 -->
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0"></feColorMatrix>
+          <feOffset dx="-4" dy="-4" result="g"></feOffset>
+          <!-- blueの抽出 -->
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" in="SourceGraphic"></feColorMatrix>
+          <feOffset dx="4" dy="0" result="b"></feOffset>
+          <!-- redの抽出 -->
+          <feColorMatrix type="matrix" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceGraphic"></feColorMatrix>
+          <feOffset dx="0" dy="4"></feOffset>
+          <!-- 色を重ねる -->
+          <feComposite operator="lighter" in="g"></feComposite>
+          <feComposite operator="lighter" in="b"></feComposite>
+        </filter>
+        <!-- ▲▲▲ RGBチャンネル ▲▲▲ -->
+      </defs>
+    </svg>
+
+    <figure class="fe-blur">
+      <img src="https://picsum.photos/id/237/200/300" alt="">
+    </figure>
+
+    <figure class="fe-aberration">
+      <img src="https://picsum.photos/id/237/200/300" alt="">
+    </figure>
+    <!-- <script src="./script.ts"></script> -->
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>sample</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="/style.04ddba79.css">
+  <script src="/style.04ddba79.js"></script></head>
+  <body>
+    <!-- https://codepen.io/trinketmage/pen/rPzxvw -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo"></feColorMatrix>
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+        </filter>
+      </defs>
+    </svg>
+
+    <div class="content">
+      <!-- ▼▼▼ インプット ▼▼▼ -->
+      <div class="input-holder">
+        <input type="text" placeholder="Anything">
+      </div>
+      <!-- ▲▲▲ インプット ▲▲▲ -->
+
+      <!-- ▼▼▼ CTA ▼▼▼ -->
+      <a href="#" class="cta">
+        <span class="caption">DISCOVER</span>
+      </a>
+      <!-- ▲▲▲ CTA ▲▲▲ -->
+
+      <!-- ▼▼▼ メニュー1 ▼▼▼ -->
+      <div class="menu">
+        <a href="#"><span>&#x00424;</span></a>
+        <a href="#"><span>&#x00444;</span></a>
+        <a href="#"><span>&#x00459;</span></a>
+        <a href="#">&#x0221E;</a>
+      </div>
+      <!-- ▲▲▲ メニュー1 ▲▲▲ -->
+
+      <!-- ▼▼▼ メニュー2 ▼▼▼ -->
+      <div class="menu invert">
+        <a href="#"><span>&#x02A53;</span></a>
+        <a href="#"><span>&#x02A00;</span></a>
+        <a href="#"><span>&#x02A7A;</span></a>
+        <a href="#">&#x02A5C;</a>
+      </div>
+      <!-- ▲▲▲ メニュー2 ▲▲▲ -->
+
+      <!-- ▼▼▼ 装飾 ▼▼▼ -->
+      <span class="decoration"></span>
+      <!-- ▲▲▲ 装飾 ▲▲▲ -->
+    </div>
+
+    <script src="/script.3066d2e8.js"></script>
+  </body>
+</html>
